@@ -25,13 +25,13 @@ class Jobs extends BaseController
     {
         $model = model(JobsModel::class);
 
-        $data['jobs'] = $model->getjobs($slug);
+        $data['jobs'] = $model->getJobs($slug);
 
         if (empty($data['jobs'])) {
             throw new PageNotFoundException('Cannot find the jobs item: ' . $slug);
         }
 
-        $data['title'] = $data['jobs']['title'];
+        $data['title'] = $data['jobs']['nama_pekerjaan'];
 
         return view('templates/header', $data)
             . view('jobs/view')
