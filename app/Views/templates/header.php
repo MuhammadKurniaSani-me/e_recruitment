@@ -258,7 +258,7 @@
 
             <h1>Welcome to E-Recruitment</h1>
 
-            <h2>The job information website with goo information</h2>
+            <h2>The job information website with good information</h2>
 
         </div>
 

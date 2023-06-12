@@ -4,13 +4,13 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class JobsModel extends Model
+class CompaniesModel extends Model
 {
-    protected $table = 'tbl_jobs';
+    protected $table = 'tbl_companies';
 
-    protected $allowedFields = ['title', 'slug', 'body'];
+    protected $allowedFields = ['nama', 'slug', 'body'];
 
-    public function getJobs($slug = false)
+    public function getCompanies($slug = false)
     {
         if ($slug === false) {
             return $this->findAll();
